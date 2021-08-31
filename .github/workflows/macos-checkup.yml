@@ -4,7 +4,7 @@ jobs:
   macOS-Checkup:
     runs-on: macos-latest
     steps:
-      - run: sysctl
+      - run: sysctl -a
       - run: free -h
       - run: df -h
       - run: docker images
