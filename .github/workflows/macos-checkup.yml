@@ -7,7 +7,7 @@ jobs:
       - run: sysctl -a
 #       - run: free -h
       - run: df -h
-      - run: docker images
+#       - run: docker images
       - run: cat /etc/os-release
       - run: pwd
       - run: ls
