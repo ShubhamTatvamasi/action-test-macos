@@ -1,0 +1,13 @@
+name: macOS Checkup
+on: [push]
+jobs:
+  macOS-Checkup:
+    runs-on: macos-latest
+    steps:
+      - run: lscpu
+      - run: free -h
+      - run: df -h
+      - run: docker images
+      - run: cat /etc/os-release
+      - run: pwd
+      - run: ls
