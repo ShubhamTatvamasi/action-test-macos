@@ -4,10 +4,5 @@ jobs:
   macOS-Checkup:
     runs-on: macos-latest
     steps:
-      - run: sysctl -a
-#       - run: free -h
-      - run: df -h
-#       - run: docker images
-      - run: cat /etc/os-release
-      - run: pwd
-      - run: ls
+      - run: virtualbox --help
+      - run: vagrant --version
