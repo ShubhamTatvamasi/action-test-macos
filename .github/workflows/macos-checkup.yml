@@ -4,8 +4,8 @@ jobs:
   macOS-Checkup:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: virtualbox --help
-      - run: vagrant --version
-      - run: vagrant up
-      - run: vagrant ssh -c "echo 'Hello World!'"
+    - uses: actions/checkout@v2
+
+    - run: vagrant plugin install vagrant-vbguest
+    - run: vagrant up
+    - run: vagrant ssh -c "echo 'Hello World!'"
