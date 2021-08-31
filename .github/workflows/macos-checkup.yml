@@ -5,7 +5,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: sysctl -a
-      - run: free -h
+#       - run: free -h
       - run: df -h
       - run: docker images
       - run: cat /etc/os-release
