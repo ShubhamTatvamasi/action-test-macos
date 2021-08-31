@@ -4,7 +4,7 @@ jobs:
   macOS-Checkup:
     runs-on: macos-latest
     steps:
-      - run: lscpu
+      - run: system_profiler | grep Processor
       - run: free -h
       - run: df -h
       - run: docker images
