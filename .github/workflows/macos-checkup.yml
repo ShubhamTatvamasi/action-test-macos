@@ -6,6 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - run: vagrant plugin install vagrant-vbguest
-    - run: vagrant up
-    - run: vagrant ssh -c "echo 'Hello World!'"
+#     - run: vagrant plugin install vagrant-vbguest
+#     - run: vagrant up
+    - run: echo $0
+#     - run: vagrant ssh -c "echo 'Hello World!'"
