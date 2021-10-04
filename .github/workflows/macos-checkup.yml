@@ -2,10 +2,11 @@ name: macOS Checkup
 on: [push]
 jobs:
   macOS-Checkup:
-    runs-on: macos-latest
+    runs-on: macos-11
     steps:
-    - uses: actions/checkout@v2
-    - run: vagrant plugin install vagrant-vbguest
-    - run: vagrant up
-    - run: echo $0
-    - run: vagrant ssh -c "echo 'Hello World!'"
+#     - uses: actions/checkout@v2
+#     - run: vagrant plugin install vagrant-vbguest
+#     - run: vagrant up
+    - run: brew install vagrant
+#     - run: echo $0
+#     - run: vagrant ssh -c "echo 'Hello World!'"
