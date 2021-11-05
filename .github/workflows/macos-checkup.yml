@@ -2,12 +2,13 @@ name: macOS Checkup
 on: [push]
 jobs:
   macOS-Checkup:
-    runs-on: macos-11
+    runs-on: macos-10.5
     steps:
-    - uses: actions/checkout@v2
-    - run: brew install vagrant virtualbox
-    - run: vagrant plugin install vagrant-vbguest
-    - run: VirtualBox restart || true
-    - run: vagrant up
-    - run: vboxmanage list vms
-    - run: vagrant ssh -c "echo 'Hello World!'"
+#     - uses: actions/checkout@v2
+    - run: VirtualBox version
+#     - run: brew install vagrant virtualbox
+#     - run: vagrant plugin install vagrant-vbguest
+#     - run: VirtualBox restart || true
+#     - run: vagrant up
+#     - run: vboxmanage list vms
+#     - run: vagrant ssh -c "echo 'Hello World!'"
