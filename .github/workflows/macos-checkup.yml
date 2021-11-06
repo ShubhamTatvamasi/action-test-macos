@@ -2,7 +2,7 @@ name: macOS Checkup
 on: [push]
 jobs:
   macOS-Checkup:
-    runs-on: macos-10.15
+    runs-on: macos-10.14
     steps:
 #     - uses: actions/checkout@v2
     - run: vboxmanage --version
