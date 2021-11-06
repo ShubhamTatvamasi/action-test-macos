@@ -5,7 +5,7 @@ jobs:
     runs-on: macos-10.15
     steps:
 #     - uses: actions/checkout@v2
-    - run: VirtualBox version
+    - run: VirtualBox --version
 #     - run: brew install vagrant virtualbox
 #     - run: vagrant plugin install vagrant-vbguest
 #     - run: VirtualBox restart || true
